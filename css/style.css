@@ -326,6 +326,11 @@ section {
   margin-bottom: 40px;
   gap: 40px;
 }
+
+.burger-menu .social-icons-link:hover,
+.burger-menu .social-icons-link:focus {
+  background-color: var(--green);
+}
 .burger-menu .social-icons {
   width: 24px;
   height: 24px;
