@@ -68,6 +68,12 @@ a:focus {
 
 button {
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
   background: var(--iris);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -375,13 +381,6 @@ section {
   height: 56px;
   margin: 0 auto;
   padding: 16px 32px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* !Section Benefits(section 2)  */
@@ -535,7 +534,7 @@ section {
   box-shadow: 0 4px 12px rgba(46, 47, 66, 0.15);
   transform: translateY(-2px);
 }
-/* !!!ЕСЛИ НЕ ПРОПУСТИТ ПРОВЕРКА - ПОМЕНЯТЬ НА СТИЛИ ИЗ МАКЕТА. НО ТАК ВСЕ РАВНО КРАСИВЕЕ
+/* !!!ЕСЛИ НЕ ПРОПУСТИТ ПРОВЕРКА - ПОМЕНЯТЬ НА СТИЛИ ИЗ МАКЕТА. НО ТАК ВРОДЕ СИМПАТИЧНЕЙ
 
 
   для portfolio-list-item  {box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -570,4 +569,121 @@ section {
 
   width: 100%;
   padding: 32px 16px;
+}
+
+/* !Footer */
+
+.footer {
+  background: var(--navy-blue);
+  padding: 96px 0;
+  color: var(--white);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  text-align: start;
+  margin: 0;
+  color: var(--cloud);
+}
+
+.footer-social-media {
+  margin-bottom: 72px;
+}
+
+.footer-social-media-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer .social-icons-list {
+  gap: 16px;
+}
+
+.footer .social-icons {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .social-icons-link {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social-icons-link:hover,
+.footer .social-icons-link:focus {
+  background-color: var(--green);
+}
+
+.footer-subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.footer-subscribe-text {
+  font-weight: 500;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.subscribe-form-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
+}
+
+.subscribe-form-input::placeholder {
+  opacity: 0.6;
+  color: var(--white);
+}
+
+.subscribe-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+}
+
+.subscribe-form-icon {
+  margin-left: 16px;
 }
