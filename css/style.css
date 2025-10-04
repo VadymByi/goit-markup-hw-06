@@ -356,7 +356,8 @@ section {
   text-align: center;
   color: var(--white);
   background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-    url("../images/people-office.jpg") center/cover no-repeat;
+    url("../images/about-bg-img/people-office-mobile.jpg") center/cover
+      no-repeat;
 }
 
 .about-title {
@@ -403,12 +404,6 @@ section {
 }
 
 .benefits-icons-wrapper {
-  /* !!!! 
-  @media screen and (min-width: 1024px) {
-  .benefits-icons-wrapper {
-    display: flex;
-  }
-}*/
   display: none;
   justify-content: center;
   align-items: center;
@@ -436,5 +431,72 @@ section {
 
 .benefits-list-item-text {
   font-weight: 500;
-  text-align: left; 
-  
+  text-align: left;
+}
+
+/* !Section Team(section 3) */
+
+.team {
+  padding: 96px 0;
+  background: var(--cloud);
+}
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.team-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 32px;
+
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+
+.team-list-item-img {
+  width: 100%;
+  height: auto;
+}
+
+.team-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  min-width: 232px;
+}
+
+.team-list-item-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--navy-blue);
+}
+
+.social-icons-list {
+  gap: 24px;
+}
+
+.team .social-icons-link:hover,
+.team .social-icons-link:focus {
+  background-color: #404bbf;
+}
+
+.social-icons {
+  width: 16px;
+  height: 16px;
+}
