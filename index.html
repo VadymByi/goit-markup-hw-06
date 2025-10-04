@@ -20,7 +20,7 @@
   <body>
     <!-- !HEADER -->
     <!-- !HEADER -->
-    <header class="header">
+    <header class="header hidden">
       <div class="container">
         <nav class="nav">
           <a class="header-logo logo" href="./index.html">
@@ -114,12 +114,14 @@
       <section class="about">
         <div class="container">
           <h1 class="about-title">Effective Solutions for Your Business</h1>
-          <button class="about-btn" type="button">Order Service</button>
+          <button class="about-btn big-blue" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
       <!-- !Section Benefits(section 2) -->
-      <section class="benefits">
+      <section class="benefits hidden">
         <div class="container">
           <h2 class="visually-hidden section-title">Benefits</h2>
           <ul class="benefits-list">
@@ -184,7 +186,7 @@
       </section>
 
       <!-- !Section Team(section 3)-->
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-list">
@@ -387,7 +389,7 @@
       </section>
 
       <!-- !Section Portfolio(section 4)-->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -590,7 +592,7 @@
                 placeholder="E-mail"
             /></label>
 
-            <button class="subscribe-form-button" type="submit">
+            <button class="subscribe-form-button big-blue" type="submit">
               Subscribe
               <svg class="subscribe-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -602,7 +604,7 @@
     </footer>
 
     <!-- !Modal + backdrop-->
-    <div class="backdrop is-open hidden">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-btn-icon" width="8" height="8">
@@ -683,12 +685,15 @@
               <span class="form-custom-checkbox">
                 <svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="accent-color" href="">Privacy Policy</a>
+                </svg>
+              </span>
+              <span class="form-custom-checkbox-text">
+                I accept the terms and conditions of the
+                <a class="accent-color" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
-          <button class="form-send-btn" type="submit">Send</button>
+          <button class="form-send-btn big-blue" type="submit">Send</button>
         </form>
       </div>
     </div>
