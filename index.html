@@ -20,94 +20,50 @@
   <body>
     <!-- !HEADER -->
     <!-- !HEADER -->
-    <header class="header hidden">
+    <header class="header">
       <div class="container">
         <nav class="nav">
           <a class="header-logo logo" href="./index.html">
             Web<span class="logo-span">Studio</span>
           </a>
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a class="header-list-item-link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-item-link" href="">Portfolio</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-item-link" href="">Contacts</a>
+            </li>
+          </ul>
         </nav>
-        <div class="burger-wrapper">
+        <button class="burger-wrapper" type="button">
           <svg class="icon-burger" width="24" height="24">
             <use
               class="icon-burger-use"
               href="./images/icons.svg#icon-burger"
             ></use>
           </svg>
-        </div>
-      </div>
-    </header>
-
-    <!-- !BURGER-MENU -->
-    <div class="burger-menu hidden">
-      <div class="container">
-        <button class="close-btn" type="button">
-          <svg class="close-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-btn-modal"></use>
-          </svg>
         </button>
-        <ul class="header-list">
-          <li class="header-list-item">
-            <a class="header-list-item-link active" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li class="header-list-item">
-            <a class="header-list-item-link" href="">Portfolio</a>
-          </li>
-          <li class="header-list-item">
-            <a class="header-list-item-link" href="">Contacts</a>
-          </li>
-        </ul>
         <address class="address">
           <ul class="address-list">
-            <li class="address-list-item">
-              <a class="address-list-item-link active" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
             <li class="address-list-item">
               <a class="address-list-item-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
+            <li class="address-list-item">
+              <a class="address-list-item-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
           </ul>
         </address>
       </div>
-
-      <div class="burger-social-media">
-        <ul class="social-icons-list">
-          <li class="social-icons-item">
-            <a class="social-icons-link" href="">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons-item">
-            <a class="social-icons-link" href="">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons-item">
-            <a class="social-icons-link" href="">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons-item">
-            <a class="social-icons-link" href="">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </header>
 
     <main class="">
       <!-- !Section About(section 1) -->
@@ -121,7 +77,7 @@
       </section>
 
       <!-- !Section Benefits(section 2) -->
-      <section class="benefits hidden">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden section-title">Benefits</h2>
           <ul class="benefits-list">
@@ -186,7 +142,7 @@
       </section>
 
       <!-- !Section Team(section 3)-->
-      <section class="team hidden">
+      <section class="team">
         <div class="container">
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-list">
@@ -389,7 +345,7 @@
       </section>
 
       <!-- !Section Portfolio(section 4)-->
-      <section class="portfolio hidden">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -401,13 +357,13 @@
                   src="./images/portfolio-img/banking-app-desctop-mobile.jpg"
                   alt="Banking App"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
 
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
               <div class="portfolio-text-wrapper">
                 <h3 class="portfolio-list-item-subtitle section-subtitle">
@@ -425,12 +381,12 @@
                   src="./images/portfolio-img/cashless-payment-mobile.jpg"
                   alt="Cashless Payment"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
 
               <div class="portfolio-text-wrapper">
@@ -449,12 +405,12 @@
                   src="./images/portfolio-img/meditation-app-mobile.jpg"
                   alt="Meditation App"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
 
               <div class="portfolio-text-wrapper">
@@ -473,12 +429,12 @@
                   src="./images/portfolio-img/taxi-service-mobile.jpg"
                   alt="Taxi Service"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
 
               <div class="portfolio-text-wrapper">
@@ -496,12 +452,12 @@
                   src="./images/portfolio-img/screen-illustration-mobile.jpg"
                   alt="Screen Illustrations"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
 
               <div class="portfolio-text-wrapper">
@@ -519,12 +475,12 @@
                   src="./images/portfolio-img/online-courses-mobile.jpg"
                   alt="Online Courses"
                 />
-                <p class="text-overlay hidden">
+                <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-overlay hidden"></div>
+                <div class="portfolio-overlay"></div>
               </div>
 
               <div class="portfolio-text-wrapper">
@@ -604,7 +560,7 @@
     </footer>
 
     <!-- !Modal + backdrop-->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-btn-icon" width="8" height="8">
@@ -699,3 +655,72 @@
     </div>
   </body>
 </html>
+
+<!-- !BURGER-MENU -->
+<div class="burger-menu">
+  <div class="container">
+    <button class="close-btn" type="button">
+      <svg class="close-btn-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-btn-modal"></use>
+      </svg>
+    </button>
+    <ul class="header-list">
+      <li class="header-list-item">
+        <a class="header-list-item-link active" href="./index.html">Studio</a>
+      </li>
+      <li class="header-list-item">
+        <a class="header-list-item-link" href="">Portfolio</a>
+      </li>
+      <li class="header-list-item">
+        <a class="header-list-item-link" href="">Contacts</a>
+      </li>
+    </ul>
+    <address class="address">
+      <ul class="address-list">
+        <li class="address-list-item">
+          <a class="address-list-item-link active" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="address-list-item">
+          <a class="address-list-item-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+    </address>
+
+    <div class="burger-social-media">
+      <ul class="social-icons-list">
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
