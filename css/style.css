@@ -2,6 +2,16 @@
   display: none !important;
 }
 
+/* .backdrop,
+.header,
+.about,
+.benefits,
+.team,
+.portfolio,
+.footer {
+  display: none;
+} */
+
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -17,17 +27,7 @@
   --dairy: #fcfcfc;
 }
 
-/* .header,
-.about,
-.benefits,
-.team,
-.portfolio,
-.footer,
-.backdrop {
-  display: none;
-} */
-
-/* !GENERAL STYLES   mobile(base)           ============================*/
+/* !GENERAL STYLES   mobile(base) */
 @media screen {
   * {
     box-sizing: border-box;
@@ -276,7 +276,7 @@
   }
 }
 
-/* !HEADER  mobile(base)                     ============================*/
+/* !HEADER  mobile(base) */
 @media screen {
   .header {
     border-bottom: 1px solid var(--cornflower);
@@ -366,7 +366,7 @@
   }
 }
 
-/* !Section About(section 1)  mobile(base) ============================*/
+/* !Section About(section 1)  mobile(base) */
 @media screen {
   .about {
     padding: 72px 0;
@@ -420,7 +420,7 @@
   }
 }
 
-/* !Section Benefits(section 2) mobile(base)============================*/
+/* !Section Benefits(section 2) mobile(base) */
 @media screen {
   .benefits {
     padding: 96px 0;
@@ -516,7 +516,7 @@
   }
 }
 
-/* !Section Team(section 3)  mobile(base)   ============================*/
+/* !Section Team(section 3)  mobile(base) */
 @media screen {
   .team {
     padding: 96px 0;
@@ -613,7 +613,7 @@
   }
 }
 
-/* !Section Portfolio(section 4)  mobile(base)   ============================*/
+/* !Section Portfolio(section 4)  mobile(base) */
 @media screen {
   .text-overlay,
   .portfolio-overlay {
@@ -771,7 +771,7 @@
   }
 }
 
-/* !Footer     mobile(base)               ============================*/
+/* !Footer     mobile(base) */
 @media screen {
   .footer {
     background: var(--navy-blue);
@@ -947,12 +947,39 @@
   }
 }
 
-/* !Footer desk ============================*/
+/* !Footer desktop ============================*/
 @media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0;
+  }
+
+  .footer-text-wrapper {
+    flex: 0 0 264px;
+    margin-right: 120px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .footer-social-media {
+    flex: 0 0 208px;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .footer-subscribe-wrapper {
+    flex: 0 0 453px;
+    padding-left: 0;
+  }
 }
 
-/* !Modal + backdrop  ============================*/
-
+/* !Modal + backdrop  mobile */
 @media screen {
   .backdrop {
     position: fixed;
@@ -976,10 +1003,12 @@
 
   .modal {
     position: fixed;
-    top: 9px;
-    left: 16px;
-    right: 16px;
-    bottom: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: calc(100% - 32px);
+    max-width: 408px;
+    max-height: calc(100vh - 16px);
     background-color: var(--dairy);
     border-radius: 4px;
     padding: 72px 16px 24px 16px;
@@ -987,7 +1016,6 @@
       0 2px 1px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1);
   }
 
   .form-text {
@@ -1131,6 +1159,27 @@
   }
 }
 
+/* !Modal + backdrop tablet ============================*/
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    top: 96px;
+    max-height: calc(100vh - 96px - 40px);
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+/* !Modal + backdrop desktop ============================*/
+@media screen and (min-width: 1158px) {
+  .modal {
+    top: 80px;
+    max-height: calc(100vh - 120px);
+  }
+}
 /* !BURGER-MENU  ============================*/
 @media screen {
   .burger-menu {
