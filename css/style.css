@@ -270,7 +270,7 @@
 }
 
 /* !GENERAL STYLES desk ============================*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1128px;
   }
@@ -1056,7 +1056,6 @@
     height: 100%;
     background-color: var(--navy-blue-modal);
     z-index: 1000;
-
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1074,14 +1073,16 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: calc(100% - 32px);
-    max-width: 408px;
-    max-height: calc(100vh - 16px);
+    width: 95%;
+    height: 95%;
+    max-width: 288px;
+    max-height: 623px;
     background-color: var(--dairy);
     border-radius: 4px;
     padding: 72px 16px 24px 16px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12),
       0 2px 1px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
+    overflow: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -1229,17 +1230,11 @@
 /* !Modal + backdrop tablet ============================*/
 @media screen and (min-width: 768px) {
   .modal {
-    /* width: 408px;  в процентах!! */
-    /* max-width: ;  задать! */
-    /* max-height: ; */
     top: 96px;
-    max-height: calc(100vh - 96px - 40px);
-    bottom: auto;
-    left: 50%;
-    right: auto;
+    max-width: 408px;
+    max-height: 584px;
     transform: translateX(-50%);
     padding: 72px 24px 24px 24px;
-    /* overflow: auto;  добавить */
   }
 }
 
@@ -1247,7 +1242,6 @@
 @media screen and (min-width: 1158px) {
   .modal {
     top: 80px;
-    max-height: calc(100vh - 120px);
   }
 }
 /* !BURGER-MENU  ============================*/
