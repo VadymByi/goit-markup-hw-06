@@ -445,11 +445,8 @@
     text-align: center;
     color: var(--white);
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      image-set(
-          url("../images/about-bg-img/people-office-mobile.jpg") 1x,
-          url("../images/about-bg-img/people-office-mobile@2x.jpg") 2x
-        )
-        center/cover no-repeat;
+      url("../images/about-bg-img/people-office-mobile.jpg") center/cover
+        no-repeat;
   }
 
   .about-title {
@@ -468,17 +465,22 @@
     padding: 16px 32px;
   }
 }
+/* ! Retina (2x) — mobile */
+@media (min-resolution: 192dpi) {
+  .about {
+    background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
+      url("../images/about-bg-img/people-office-mobile@2x.jpg") center/cover
+        no-repeat;
+  }
+}
 
 /* !Section About(section 1) tablet ============================*/
 @media screen and (min-width: 768px) {
   .about {
     padding: 112px 0;
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      image-set(
-          url("../images/about-bg-img/people-office-tablet.jpg") 1x,
-          url("../images/about-bg-img/people-office-tablet@2x.jpg") 2x
-        )
-        center/cover no-repeat;
+      url("../images/about-bg-img/people-office-tablet.jpg") center/cover
+        no-repeat;
   }
 
   .about-title {
@@ -488,16 +490,32 @@
     margin-bottom: 36px;
   }
 }
+
+/* ! Retina (2x) — tablet */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .about {
+    background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
+      url("../images/about-bg-img/people-office-tablet@2x.jpg") center/cover
+        no-repeat;
+  }
+}
+
 /* !Section About(section 1) desk ============================*/
 @media screen and (min-width: 1158px) {
   .about {
     padding: 188px 0;
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      image-set(
-          url("../images/about-bg-img/people-office-desktop.jpg") 1x,
-          url("../images/about-bg-img/people-office-desktop@2x.jpg") 2x
-        )
-        center/cover no-repeat;
+      url("../images/about-bg-img/people-office-desktop.jpg") center/cover
+        no-repeat;
+  }
+}
+
+/* ! Retina (2x) — desktop */
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .about {
+    background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
+      url("../images/about-bg-img/people-office-desktop@2x.jpg") center/cover
+        no-repeat;
   }
 }
 
@@ -1318,11 +1336,6 @@
   .header-list-item-link.active {
     color: var(--ocean);
   }
-
-  /* 
-.header-list-item-link.active::after {
-  transform: scaleX(1);
-} */
 
   .address {
     margin: 168px auto 48px 0;
