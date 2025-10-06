@@ -115,6 +115,10 @@
     margin: 0 auto;
   }
 
+  .header-list-item-link.active {
+    color: var(--ocean);
+  }
+
   /* !section common */
   .section-title {
     font-weight: 700;
@@ -343,13 +347,10 @@
 
   .header-logo {
     padding: 0;
-    margin-right: 0px;
+    margin-right: 120px;
   }
 
-  .header .container {
-  }
   .header .nav {
-    gap: 40px;
     align-items: center;
   }
 
@@ -369,6 +370,12 @@
     padding-bottom: 24px;
     color: var(--navy-blue);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header .header-list-item-link:hover,
+  .header .header-list-item-link:focus {
+    color: var(--ocean);
   }
 
   .header .address {
@@ -400,12 +407,18 @@
   .header-list-item-link.active {
     color: var(--ocean);
   }
+}
 
+/* !HEADER desk ============================*/
+@media screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
   .header-list-item-link::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
     width: 100%;
     transform: scaleX(0);
     height: 4px;
@@ -418,10 +431,11 @@
   .header-list-item-link.active::after {
     transform: scaleX(1);
   }
-}
 
-/* !HEADER desk ============================*/
-@media screen and (min-width: 1158px) {
+  .header-list-item-link:hover::after,
+  .header-list-item-link:focus::after {
+    transform: scaleX(1);
+  }
 }
 
 /* !Section About(section 1)  mobile(base) */
@@ -596,6 +610,8 @@
 
   .team-list {
     display: flex;
+    margin: 0 auto;
+    max-width: 264px;
     flex-direction: column;
     gap: 72px;
   }
@@ -654,6 +670,7 @@
 /* !Section Team(section 3) tablet ============================*/
 @media screen and (min-width: 768px) {
   .team-list {
+    max-width: 552px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
@@ -671,12 +688,20 @@
   }
 
   .team-list {
+    justify-content: center;
+
+    max-width: 0;
     gap: 24px;
     flex-wrap: nowrap;
   }
 
   .team-list-item {
+    /* padding: 16px; */
     flex: 0 0 calc(25% - 12px);
+  }
+
+  .social-icons-list {
+    padding: 0 16px;
   }
 }
 
