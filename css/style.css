@@ -431,8 +431,11 @@
     text-align: center;
     color: var(--white);
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      url("../images/about-bg-img/people-office-mobile.jpg") center/cover
-        no-repeat;
+      image-set(
+          url("../images/about-bg-img/people-office-mobile.jpg") 1x,
+          url("../images/about-bg-img/people-office-mobile@2x.jpg") 2x
+        )
+        center/cover no-repeat;
   }
 
   .about-title {
@@ -457,8 +460,11 @@
   .about {
     padding: 112px 0;
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      url("../images/about-bg-img/people-office-mobile.jpg") center/cover
-        no-repeat;
+      image-set(
+          url("../images/about-bg-img/people-office-tablet.jpg") 1x,
+          url("../images/about-bg-img/people-office-tablet@2x.jpg") 2x
+        )
+        center/cover no-repeat;
   }
 
   .about-title {
@@ -473,8 +479,11 @@
   .about {
     padding: 188px 0;
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
-      url("../images/about-bg-img/people-office-mobile.jpg") center/cover
-        no-repeat;
+      image-set(
+          url("../images/about-bg-img/people-office-desktop.jpg") 1x,
+          url("../images/about-bg-img/people-office-desktop@2x.jpg") 2x
+        )
+        center/cover no-repeat;
   }
 }
 
@@ -1220,7 +1229,9 @@
 /* !Modal + backdrop tablet ============================*/
 @media screen and (min-width: 768px) {
   .modal {
-    width: 408px;
+    /* width: 408px;  в процентах!! */
+    /* max-width: ;  задать! */
+    /* max-height: ; */
     top: 96px;
     max-height: calc(100vh - 96px - 40px);
     bottom: auto;
@@ -1228,6 +1239,7 @@
     right: auto;
     transform: translateX(-50%);
     padding: 72px 24px 24px 24px;
+    /* overflow: auto;  добавить */
   }
 }
 
@@ -1267,7 +1279,7 @@
   .header-list {
     display: flex;
     flex-direction: column;
-    /* gap: 40px; */
+    gap: 40px;
     margin-top: 0;
     font-weight: 700;
     font-size: 36px;
