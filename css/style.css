@@ -1276,8 +1276,10 @@
     top: 96px;
     max-width: 408px;
     max-height: 584px;
+    height: auto;
     transform: translateX(-50%);
     padding: 72px 24px 24px 24px;
+    overflow: auto;
   }
 }
 
@@ -1285,6 +1287,7 @@
 @media screen and (min-width: 1158px) {
   .modal {
     top: 80px;
+    overflow: auto;
   }
 }
 /* !BURGER-MENU  ============================*/

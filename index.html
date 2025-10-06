@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-wrapper" type="button">
+        <button class="burger-wrapper" type="button" id="burgerBtn">
           <svg class="icon-burger" width="24" height="24">
             <use
               class="icon-burger-use"
@@ -662,7 +662,7 @@
     </footer>
 
     <!-- !Modal + backdrop-->
-    <div class="backdrop is-open hidden" id="backDrop">
+    <div class="backdrop" id="backDrop">
       <div class="modal">
         <button class="close-btn" type="button" id="closeModalBtn">
           <svg class="close-btn-icon" width="8" height="8">
@@ -756,9 +756,9 @@
       </div>
     </div>
     <!-- !BURGER-MENU -->
-    <div class="burger-menu">
+    <div class="burger-menu" id="burgerMenu">
       <div class="container">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" id="closeBurgerBtn">
           <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn-modal"></use>
           </svg>
