@@ -204,7 +204,7 @@
   /*  !social-icons common */
   .social-icons-list {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -269,14 +269,15 @@
 /* !GENERAL STYLES tablet============================*/
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 748px;
   }
 }
 
 /* !GENERAL STYLES desk ============================*/
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1128px;
+    max-width: 1158px;
+    padding: 0 15px;
   }
 }
 
@@ -292,7 +293,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 70px;
   }
 
   .header-logo {
@@ -414,6 +414,10 @@
   .header-logo {
     margin-right: 76px;
   }
+
+  .header .address-list {
+  }
+
   .header-list-item-link::after {
     content: "";
     position: absolute;
@@ -435,6 +439,12 @@
   .header-list-item-link:hover::after,
   .header-list-item-link:focus::after {
     transform: scaleX(1);
+  }
+
+  .header .address-list {
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
   }
 }
 
@@ -503,10 +513,19 @@
 /* !Section About(section 1) desk ============================*/
 @media screen and (min-width: 1158px) {
   .about {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 188px 0;
     background: linear-gradient(var(--grey), var(--grey)) center/cover no-repeat,
       url("../images/about-bg-img/people-office-desktop.jpg") center/cover
         no-repeat;
+  }
+
+  .about .container {
+    max-width: 496px;
+  }
+  .about-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -628,20 +647,13 @@
 
   .team-list {
     display: flex;
-    margin: 0 auto;
-    max-width: 264px;
     flex-direction: column;
     gap: 72px;
+    max-width: 264px;
+    margin: 0 auto;
   }
 
   .team-list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    padding-bottom: 32px;
-
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -649,17 +661,17 @@
   }
 
   .team-list-item-img {
-    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
     height: auto;
   }
 
   .team-text-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 8px;
     text-align: center;
-    min-width: 232px;
+    padding: 32px 16px;
   }
 
   .team-list-item-subtitle {
@@ -687,39 +699,31 @@
 
 /* !Section Team(section 3) tablet ============================*/
 @media screen and (min-width: 768px) {
-  .team-list {
-    max-width: 552px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 64px 24px;
+  .team {
+    padding: 192px 0;
   }
 
-  .team-list-item {
-    flex: 0 0 calc(50% - 12px);
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 552px;
+    gap: 64px 24px;
   }
 }
 
 /* !Section Team(section 3) desk ============================*/
 @media screen and (min-width: 1158px) {
   .team {
-    padding: 14px 0 120px;
+    padding: 120px 0;
   }
-
   .team-list {
-    justify-content: center;
-
-    max-width: 0;
-    gap: 24px;
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .team-list-item {
-    /* padding: 16px; */
-    flex: 0 0 calc(25% - 12px);
-  }
-
-  .social-icons-list {
-    padding: 0 16px;
+    max-width: 1128px;
+    gap: 24px;
   }
 }
 
@@ -746,8 +750,6 @@
   }
 
   .portfolio-list-item {
-    /* display: flex;
-    flex-direction: column; */
     justify-content: center;
     width: 100%;
     background: var(--white);
@@ -761,21 +763,6 @@
     box-shadow: 0 4px 12px rgba(46, 47, 66, 0.15);
     transform: translateY(-2px);
   }
-  /* !!!ЕСЛИ НЕ ПРОПУСТИТ ПРОВЕРКА - ПОМЕНЯТЬ НА СТИЛИ ИЗ МАКЕТА. НО ТАК ВРОДЕ СИМПАТИЧНЕЙ
-
-
-  для portfolio-list-item  {box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-    
-
-
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  
-
-*/
 
   .portfolio-img-wrapper {
     position: relative;
@@ -793,7 +780,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
+    gap: 8px;
     width: 100%;
     padding: 32px 16px;
   }
@@ -971,7 +958,7 @@
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--white);
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid var(--white);
     border-radius: 4px;
@@ -1028,18 +1015,20 @@
     flex-wrap: wrap;
     gap: 0 24px;
     align-items: stretch;
+    padding: 0 108px;
   }
 
   .footer-text-wrapper {
     flex: 1 0 calc(50% - 12px);
     align-items: flex-start;
     margin-bottom: 72px;
-    padding-left: 76px;
+    /* padding-left: 76px; */
   }
 
   .footer-social-media {
     display: flex;
     flex-direction: column;
+    margin: 0;
     flex: 1 0 calc(50% - 12px);
     align-items: flex-start;
   }
@@ -1048,7 +1037,7 @@
     flex: 1 0 100%;
     align-items: flex-start;
 
-    padding-left: 76px;
+    /* padding-left: 76px; */
   }
 
   .footer-subscribe-form {
@@ -1067,7 +1056,7 @@
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
-    padding: 0;
+    padding: 0 15px;
   }
 
   .footer-text-wrapper {
@@ -1341,7 +1330,7 @@
   }
 
   .address {
-    margin: 168px auto 48px 0;
+    margin: 168px 0 48px 0;
   }
 
   .address-list {
@@ -1365,7 +1354,6 @@
     /* align-items: flex-start; */
     justify-content: flex-start;
     flex-direction: row;
-    margin-bottom: 40px;
     gap: 40px;
   }
 
