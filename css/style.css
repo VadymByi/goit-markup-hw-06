@@ -1053,6 +1053,7 @@
   }
 
   .footer .container {
+    /* display: flex; */
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
@@ -1061,7 +1062,7 @@
 
   .footer-text-wrapper {
     flex: 0 0 264px;
-    margin-right: 120px;
+    margin-right: 100px;
     margin-bottom: 0;
     padding-left: 0;
   }
