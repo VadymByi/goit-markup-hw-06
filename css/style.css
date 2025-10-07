@@ -700,7 +700,7 @@
 /* !Section Team(section 3) tablet ============================*/
 @media screen and (min-width: 768px) {
   .team {
-    padding: 192px 0;
+    padding: 192px 0 16px;
   }
 
   .team-list {
@@ -792,6 +792,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+  }
+
+  .portfolio {
+    padding: 176px 0 96px;
   }
 
   .portfolio-list-item {
@@ -982,7 +986,6 @@
     opacity: 0.6;
   }
 
-  /*  !ЕСЛИ НЕ ПРОЙДЕТ ПРОВЕРКУ - УБРАТЬ. СНОВА ЛИЧНАЯ ИНИЦИАТИВА ДЛЯ КРАСОТЫ*/
   .subscribe-form-input:focus {
     outline: none;
     border-color: var(--iris);
@@ -1053,7 +1056,6 @@
   }
 
   .footer .container {
-    /* display: flex; */
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
